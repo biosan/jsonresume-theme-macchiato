@@ -1,0 +1,35 @@
+{{#if resume.projects.length}}
+<div class="container project-container">
+    {{> title value="Open Source Projects"}}
+
+    {{#each resume.projects}}
+        <section class="item">
+            {{> section-header name=this.title website=this.url showWebsite=true}}
+
+            {{#if role}}
+                <h5>{{role}}</h5>
+            {{/if}}
+
+            {{#if keywords.length}}
+            <div class="flex-container">
+                {{#each keywords}}
+                    <h6 class="skill">{{.}}</h6>
+                {{/each}}
+            </div>
+            {{/if}}
+
+            {{#if summary}}
+            <p class="summary">{{summary}}</p>
+            {{/if}}
+
+            {{#if highlights.length}}
+            <ul>
+                {{#each highlights}}
+                <li>{{.}}</li>
+                {{/each}}
+            </ul>
+            {{/if}}
+        </section>
+    {{/each}}
+</div>
+{{/if}}

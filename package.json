@@ -1,0 +1,49 @@
+{
+  "name": "jsonresume-theme-macchiato",
+  "version": "0.1.0",
+  "description": "Simple theme for JSON Resume. Based on caffeine-theme.",
+  "author": "Alessandro Biondi",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm run pretty && npm run lint && npm run test",
+    "pretty": "prettier --write --ignore-path='*lock.json' '{src/**/*.{js,ts,json},./*{js,ts,json}}' ",
+    "lint": "eslint *.js"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run pretty && npm run lint",
+      "pre-push": "npm run prepublishOnly"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biosan/jsonresume-theme-macchiato"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "address-format": "*",
+    "handlebars": "*",
+    "handlebars-wax": "*",
+    "moment": "*",
+    "swag": "*"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "latest",
+    "jest": "*",
+    "jest-handlebars": "^1.0.1",
+    "jest-image-snapshot": "*",
+    "prettier": "latest",
+    "puppeteer": "*"
+  },
+  "jest": {
+    "transform": {
+      "\\.hbs$": "jest-handlebars"
+    }
+  }
+}

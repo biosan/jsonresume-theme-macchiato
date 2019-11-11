@@ -1,0 +1,33 @@
+{{#resume.basics}}
+<div class="container about-container">
+    {{> title value="About"}}
+
+    {{#if location}}
+        {{#location}}
+        {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+        {{/location}}
+    {{/if}}
+
+    {{#if birthday}}
+        {{> info-tag text=(concat "Born in " this.birthday) icon="fa-calendar"}}
+    {{/if}}
+
+    {{#if email}}
+        {{> info-tag text=this.email icon="fa-envelope-o" isEmail=true url=this.email}}
+    {{/if}}
+
+    {{#if phone}}
+        {{> info-tag text=this.phone icon="fa-mobile"}}
+    {{/if}}
+
+    {{#if website}}
+        {{> info-tag text=this.website icon="fa-globe" url=this.website}}
+    {{/if}}
+
+    {{#if profiles}}
+        {{#each profiles}}
+            {{> social}}
+        {{/each}}
+    {{/if}}
+</section>
+{{/resume.basics}}
