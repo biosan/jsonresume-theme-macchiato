@@ -21,7 +21,10 @@ describe('jest-image-snapshot usage with an image received from puppeteer', () =
   it('works', async () => {
     const page = await browser.newPage();
     await page.goto(path.join('file://', __dirname, '/../../resume.html'));
-    const image = await page.screenshot();
+    const image = await page.screenshot({
+      fullPage: true,
+      omitBackground: true,
+    });
 
     expect(image).toMatchImageSnapshot();
   });
