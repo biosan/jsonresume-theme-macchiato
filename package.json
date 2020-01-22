@@ -22,24 +22,24 @@
   },
   "license": "MIT",
   "dependencies": {
-    "address-format": "*",
-    "handlebars": "*",
-    "handlebars-wax": "*",
-    "moment": "*",
-    "swag": "*"
+    "address-format": "^0.0.3",
+    "handlebars": "^4.5.1",
+    "handlebars-wax": "^6.1.0",
+    "moment": "^2.24.0",
+    "swag": "^0.7.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "latest",
-    "@commitlint/config-conventional": "latest",
+    "@commitlint/cli": "~8.2.0",
+    "@commitlint/config-conventional": "~8.2.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "husky": "latest",
-    "jest": "*",
+    "husky": "~3.0.9",
+    "jest": "^24.9.0",
     "jest-handlebars": "^1.0.1",
-    "jest-image-snapshot": "*",
-    "prettier": "latest",
-    "puppeteer": "*"
+    "jest-image-snapshot": "^2.11.0",
+    "prettier": "^1.18.2",
+    "puppeteer": "^2.0.0"
   },
   "jest": {
     "transform": {
