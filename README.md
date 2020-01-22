@@ -28,13 +28,19 @@ I also wanted I simple environment, so I used the boilerplate provided by JSON R
 ## Usage
 
 1. Download [JSON Resume CLI](https://jsonresume.org/)
-  `npm install -g resume-cli`
+  ```
+  npm install -g resume-cli
+  ```
 
 1. Download the theme from [npm](https://www.npmjs.com/)
-  `npm install -g jsonresume-theme-macchiato`
+  ```
+  npm install -g jsonresume-theme-macchiato
+  ```
 
 1. Use resume cli to build your resume
-  `resume export resume.html --theme macchiato`
+  ```
+  resume export resume.html --theme macchiato
+  ```
 
 ### PDF output
 
