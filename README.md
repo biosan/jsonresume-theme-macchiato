@@ -14,6 +14,8 @@ I also wanted I simple environment, so I used the boilerplate provided by JSON R
 
 ## Changes from Caffeine Theme
 
+### Environment
+
 - Simpler and less sofisticated development environment, the same as JSON Resume boilerplate. (Caffeine has live re-building and automatic page reloading)
 
 
@@ -28,7 +30,7 @@ I also wanted I simple environment, so I used the boilerplate provided by JSON R
 1. Download [JSON Resume CLI](https://jsonresume.org/)
   `npm install -g resume-cli`
 
-1. Download the theme from [npm](https://www.npmjs.com/) (if you)
+1. Download the theme from [npm](https://www.npmjs.com/)
   `npm install -g jsonresume-theme-macchiato`
 
 1. Use resume cli to build your resume
@@ -38,8 +40,8 @@ I also wanted I simple environment, so I used the boilerplate provided by JSON R
 
 Probably you want a PDF version of your resume...
 
-JSONResume CLI should be able to make a PDF out of your JSON (build HTML and then render the PDF),
-but I always struggled to get it to work, so I use a more direct and effective approach.
+JSONResume CLI should be able to make a PDF out of your JSON but I always struggled to get it to work,
+so I switched to a more direct and effective approach.
 
 I use Puppeteer-CLI to make a PDF from my HTML resume.
 
@@ -54,3 +56,4 @@ Obviously you could write a very simple Node script to use the real Puppeteer an
 ## License
 
 Available under the [MIT license](http://mths.be/mit).
+
