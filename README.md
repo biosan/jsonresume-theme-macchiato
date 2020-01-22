@@ -9,7 +9,7 @@ I wanted to build my own resume theme, so I decided to start from a theme I like
 I also wanted I simple environment, so I used the boilerplate provided by JSON Resume instead of using the awesome work done by [kelyvin](https://github.com/kelyvin/) for it's Caffeine Theme. If you are looking for a more complete environment take a look at the caffine theme.
 
 
-> Currently it doesn't have any major style difference from it's parent [Caffeine](https://github.com/kelyvin/jsonresume-theme-caffeine).
+> ***Currently it doesn't have any major style difference from it's parent [Caffeine](https://github.com/kelyvin/jsonresume-theme-caffeine).***
 
 
 ## Changes from Caffeine Theme
@@ -32,12 +32,12 @@ I also wanted I simple environment, so I used the boilerplate provided by JSON R
   npm install -g resume-cli
   ```
 
-1. Download the theme from [npm](https://www.npmjs.com/)
+2. Download the theme from [npm](https://www.npmjs.com/)
   ```
   npm install -g jsonresume-theme-macchiato
   ```
 
-1. Use resume cli to build your resume
+3. Use resume cli to build your resume
   ```
   resume export resume.html --theme macchiato
   ```
