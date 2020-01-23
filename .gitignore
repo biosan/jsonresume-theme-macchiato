@@ -464,3 +464,7 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/vim,node,visualstudio
+
+# Ignore diff images generated after test failed comparation
+src/__tests__/__image_snapshots__/__diff_output__/
+
