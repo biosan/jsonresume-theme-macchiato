@@ -5,13 +5,11 @@ const handlebarsWax = require('handlebars-wax');
 const moment = require('moment');
 const Swag = require('swag');
 
-
 try {
   window.Swag.registerHelpers(handlebars);
 } catch (e) {
   Swag.registerHelpers(handlebars);
 }
-
 
 handlebars.registerHelper({
   removeProtocol: url => url.replace(/.*?:\/\//g, ''),
@@ -22,7 +20,6 @@ handlebars.registerHelper({
   formatDate: date => moment(date).format('MM/YYYY'),
   // lowercase: s => s.toLowerCas(),
 });
-
 
 function render(resume) {
   const dir = `${__dirname}/src`;
