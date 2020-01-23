@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "address-format": "^0.0.3",
-    "handlebars": "^4.5.1",
+    "handlebars": "^4.7.2",
     "handlebars-wax": "^6.1.0",
     "moment": "^2.24.0",
     "swag": "^0.7.0"
