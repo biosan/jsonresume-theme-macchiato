@@ -58,7 +58,7 @@ puppeteer --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 --fo
 
 Obviously you could write a very simple Node script to use the real Puppeteer and the `render` function to make a PDF without first exporting the HTML version.
 
-Also checkout [HackMyResume](), a powerful tool to build and analyze your JSON Resume.
+Also checkout [HackMyResume](https://github.com/hacksalot/HackMyResume), a powerful tool to build and analyze your JSON Resume.
 
 
 ## License
