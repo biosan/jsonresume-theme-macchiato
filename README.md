@@ -53,7 +53,7 @@ I use Puppeteer-CLI to make a PDF from my HTML resume.
 
 ```
 npm install -g puppeteer-cli
-puppeteer --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 --format A4 print resume.html resume.pdf
+puppeteer --wait-until networkidle0 --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 --format A4 print resume.html resume.pdf
 ```
 
 Obviously you could write a very simple Node script to use the real Puppeteer and the `render` function to make a PDF without first exporting the HTML version.
