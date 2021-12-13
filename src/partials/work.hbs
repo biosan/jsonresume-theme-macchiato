@@ -7,7 +7,13 @@
             {{> section-header name=this.company }}
 
             {{#if position}}
-            <h4>{{position}}</h4>
+            <h4>{{position}}
+                {{#if location}}
+                <span class="pull-right">
+                {{location}}
+                </span>
+                {{/if}}
+            </h4>
             {{/if}}
 
             {{#if keywords.length}}
