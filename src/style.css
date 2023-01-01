@@ -268,9 +268,8 @@ ul.two-column li {
 
 .left-column {
   float: left;
-  width: 160px;
+  width: 162px;
   margin-right: 20px;
-  word-wrap: break-word;
 }
 
 .right-column {
@@ -365,6 +364,7 @@ ul.two-column li {
 }
 
 .education-container .location {
+  margin-left: 0.3rem;
   padding-bottom: 6px;
   font-weight: 400;
 }
@@ -385,8 +385,13 @@ ul.two-column li {
 }
 
 .skill {
-  margin: .15em;
-  padding: .15em;
-  background: ghostwhite;
+  margin: .15rem;
+  padding: 0.2rem 0.4rem;
+  color: white;
+  background: rgba(86, 129, 122, 0.8);
   border-radius: 5px;
+}
+
+.skill-badge {
+  
 }

@@ -2,11 +2,23 @@
 <div class="container education-container">
     {{> title value="Education"}} {{#each resume.education}}
     <section class="item">
-        {{> section-header name=this.institution }} {{#if location}}
-        <h5 class="location">{{location}}</h5>
+        {{#if studyType}}
+            {{#if area}}
+                {{> section-header name=(concat this.studyType  ' In ' this.area) }}
+            {{else}}
+                {{> section-header name=(concat this.studyType) }}
+            {{/if}}
         {{/if}}
 
-        <h4>{{#if studyType}}{{studyType}} {{/if}}{{#if area}}{{area}}{{/if}}</h4>
+        <div class="flex-container">
+            {{#if institution}}
+                <h4> {{institution}}</h4>
+            {{/if}}
+
+            {{#if location}}
+                <h5 class="location">{{location}}</h5>
+            {{/if}}
+        </div>
 
         {{#if gpa}}
         <h5>{{gpa}}</h5>
