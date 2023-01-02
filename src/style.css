@@ -316,6 +316,10 @@ ul.two-column li {
   }
 }
 
+.profile-label {
+  text-transform: uppercase;
+}
+
 /* Components */
 .info-tag-container {
   margin-bottom: 5px;
