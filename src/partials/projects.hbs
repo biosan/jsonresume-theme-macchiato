@@ -4,30 +4,36 @@
 
     {{#each resume.projects}}
         <section class="item">
-            {{> section-header name=this.name website=this.url showWebsite=true}}
+            {{> project-section name=this.name website=this.url showWebsite=true}}
+
+            {{#if keywords.length}}
+                <div class="flex-container">
+                    {{#each keywords}}
+                        <h6 class="skill">{{.}}</h6>
+                    {{/each}}
+                </div>
+            {{/if}}
+
+            {{#if description}}
+                <h4>
+                    {{description}}
+                </h4>
+            {{/if}}
+
+            {{#if highlights.length}}
+                <ul class="list-section">
+                    {{#each highlights}}
+                    <li>{{.}}</li>
+                    {{/each}}
+                </ul>
+            {{/if}}
 
             {{#if role}}
                 <h5>{{role}}</h5>
             {{/if}}
 
-            {{#if keywords.length}}
-            <div class="flex-container">
-                {{#each keywords}}
-                    <h6 class="skill">{{.}}</h6>
-                {{/each}}
-            </div>
-            {{/if}}
-
             {{#if summary}}
-            <p class="summary">{{summary}}</p>
-            {{/if}}
-
-            {{#if highlights.length}}
-            <ul>
-                {{#each highlights}}
-                <li>{{.}}</li>
-                {{/each}}
-            </ul>
+                <p class="summary">{{summary}}</p>
             {{/if}}
         </section>
     {{/each}}

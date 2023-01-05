@@ -14,6 +14,12 @@ handlebars.registerHelper({
   eq: (a, b) => a === b,
 });
 
+handlebars.registerHelper('breaklines', (text) => {
+  let formatted = handlebars.Utils.escapeExpression(text);
+  formatted = formatted.replace(/(\r\n|\n|\r)/gm, '<br>');
+  return new handlebars.SafeString(formatted);
+});
+
 function render(resume) {
   const dir = `${__dirname}/src`;
   const css = fs.readFileSync(`${dir}/style.css`, 'utf-8');

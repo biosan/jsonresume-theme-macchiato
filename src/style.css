@@ -3,6 +3,7 @@
 /*----- Fonts -----*/
 /*----- Dimensions and sizes -----*/
 /* Base */
+
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
@@ -164,13 +165,27 @@ em {
   color: #999;
 }
 
+.list-section li {
+  padding-top: 4px;
+}
+
+.list-section li:last-child {
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+
+.list-section {
+  margin: 0;
+}
+
 ul {
-  margin: 10px 0 0;
+  margin: 10px 0 10px;
   -webkit-padding-start: 25px;
+  padding-left: 18px;
 }
 
 ul li {
-  padding-left: 10px;
+  padding-left: 6px;
 }
 
 ul.minimal {
@@ -199,7 +214,7 @@ ul.two-column li {
 }
 
 .container {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .keyline {
@@ -235,7 +250,13 @@ ul.two-column li {
 }
 
 .summary {
-  margin: 5px 0 5px;
+  margin: 5px 0;
+}
+
+.summary br {
+  display: block;
+  content: "";
+  margin: 5px 0;
 }
 
 .sublink {
@@ -256,7 +277,7 @@ ul.two-column li {
   display: block;
   margin: 0 auto;
   border-top: 10px solid #56817A;
-  padding: 36px 22px 30px 34px;
+  padding: 14px 22px 30px 24px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -268,7 +289,7 @@ ul.two-column li {
 
 .left-column {
   float: left;
-  width: 162px;
+  width: 218px;
   margin-right: 20px;
 }
 
@@ -278,12 +299,22 @@ ul.two-column li {
 }
 
 .item {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .item:last-child {
   margin-bottom: 0;
 }
+
+.item .skills {
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+.item:last-child .skills {
+  padding-bottom: 0;
+}
+
 
 @media print {
   body {
@@ -396,6 +427,8 @@ ul.two-column li {
   border-radius: 5px;
 }
 
-.skill-badge {
-  
+.sublink-small {
+  font-size: 0.6rem;
+  font-weight: 200;
+  color: dimgray;
 }
