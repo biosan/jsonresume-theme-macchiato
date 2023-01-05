@@ -91,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: .5px;
@@ -100,7 +100,7 @@ h2 {
 h3 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: .4px;
 }
 
@@ -111,7 +111,7 @@ h3.bold {
 h4 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 h4.bold {
@@ -150,7 +150,7 @@ a .fa-external-link {
 
 p,
 li {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 blockquote {
@@ -214,6 +214,10 @@ ul.two-column li {
 }
 
 .container {
+  padding-top: 10px;
+}
+
+.about-container {
   padding-top: 10px;
 }
 
@@ -289,7 +293,7 @@ ul.two-column li {
 
 .left-column {
   float: left;
-  width: 218px;
+  width: 230px;
   margin-right: 20px;
 }
 
@@ -349,6 +353,9 @@ ul.two-column li {
 
 .profile-label {
   text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
 /* Components */
@@ -431,4 +438,9 @@ ul.two-column li {
   font-size: 0.6rem;
   font-weight: 200;
   color: dimgray;
+}
+
+.title h2 {
+  font-weight: 300;
+  letter-spacing: 2px;
 }
